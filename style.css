@@ -64,7 +64,7 @@ html{
   padding: 20px;
   color: white;
   transition: 2s;
-  z-index: 2;
+  z-index: 1002;
 }
 
 .side-navbar-link {
@@ -503,6 +503,14 @@ html{
   .footer p{
     font-size: 15px;
   }
+
+  .offer-details{
+    font-size: 15px;
+  }
+
+  .top-cross i{
+    font-size: 20px;
+  }
 }
 
 /* For small phones (max-width: 480px) */
@@ -613,6 +621,18 @@ html{
   
   .footer p{
     font-size: 15px;
+  }
+
+  .sign-up-offer p{
+    font-size: 15px;
+  }
+
+ .offer-details{
+    font-size: 15px;
+  }
+
+  .top-cross i{
+    font-size: 20px;
   }
 }
 
