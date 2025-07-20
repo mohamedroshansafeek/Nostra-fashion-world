@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+body{
+   font-family: "Roboto Slab", serif;
+}
+
 .sign-up {
   display: flex;
   justify-content: center;
