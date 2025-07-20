@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections</title>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+     <!--Tailwind CSS CDN link-->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <!--Css link-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Font Awesome Icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--JavaScript link-->
+    <script src="collections.js" defer></script>
+</head>
+<body>
+     <div class="sign-up">
+        <div class="sign-up-offer">
+            <p class="offer-details">Sign Up and <strong>Get 20% OFF</strong>for your first order</p>
+        </div>
+
+        <p class="top-cross" onclick="closethesignup()">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+
+    </div>
+
+
+    <!--NAVBAR-->
+    <nav class="navbar" style="top: 0;">
+        <h1>Nostra</h1>
+
+        <div class="navbar-links">
+            <p class="navbar-link"><a href="index.html">Home</a></p>
+            <p class="navbar-link"><a href="collection">Collections</a></p>
+            <p class="navbar-link"><a href="contact.html">Contact Us</a></p>
+        </div>
+
+        <div class="navbar-menu-toggle" onclick="showNavbar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+    </nav>
+
+
+    <!--side Navbar-->
+    <div class="side-navbar" style="z-index: 1002;">
+        <p class="cross" style="text-align: right;" onclick="closeNavbar()">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+
+        <div class="side-navbar-links">
+            <p class="side-navbar-link"><a href="index.html">Home</a></p>
+            <p class="side-navbar-link"><a href="collections.html">Collections</a></p>
+            <p class="side-navbar-link"><a href="contact.html">Contact Us</a></p>
+        </div>
+    </div>
+
+     <!-- Collections -->
+
+    <div class="grid grid-flow-col justify-start items-start p-2 mt-2 mb-10">
+        <div class="grid grid-flow-row gap-5 p-2 md:pr-14 lg:pr-32 w-full">
+            <div>
+                <h1 class="font-bold text-xs md:text-lg lg:text-3xl">Occasion</h1>
+                <div class="w-full pt-2 md:pt-5">
+                    <div>
+                        <input type="checkbox" value="Summer" id="Summer">
+                        <label for="Summer" class="text-xs md:text-lg lg:text-2xl">Summer</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" value="Party" id="Party">
+                        <label for="Party" class="text-xs md:text-lg lg:text-2xl">Party</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" value="Beach" id="Beach">
+                        <label for="Beach" class="text-xs md:text-lg lg:text-2xl">Beach</label>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h1 class="font-bold text-xs md:text-lg lg:text-3xl">Colors</h1>
+                <div class="w-full pt-2 md:pt-5">
+                    <div>
+                        <input type="checkbox" value="Red" id="Red">
+                        <label for="Red" class="text-xs md:text-lg lg:text-2xl">Red</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" value="White" id="White">
+                        <label for="White" class="text-xs md:text-lg lg:text-2xl">White</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" value="Blue" id="Blue">
+                        <label for="Blue" class="text-xs md:text-lg lg:text-2xl">Blue</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" value="Green" id="Green">
+                        <label for="Green" class="text-xs md:text-lg lg:text-2xl">Green</label>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h1 class="font-bold text-xs md:text-lg lg:text-3xl">Arrivals</h1>
+                <div class="w-full pt-2 md:pt-5">
+                    <div>
+                        <input type="checkbox" value="Old" id="Old">
+                        <label for="Old" class="text-xs md:text-lg lg:text-2xl">Old</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" value="New" id="New">
+                        <label for="New" class="text-xs md:text-lg lg:text-2xl">New</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pl-5 border-l-4 border-black w-full">
+            <div
+                class="grid grid-flow-col justify-between items-center border-2 border-black p-2 mr-2 rounded-xl w-full" for="search">
+                <input type="text" id="search" placeholder="search" class="focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6 w-6" for="search">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                </svg>
+            </div>
+            <div id="Products">
+                <div class="grid grid-cols-3 overflow-x-auto gap-3 md:gap-3 p-4">
+                    <div>
+                        <img src="./nastro-img/n9.jpg" alt="" class="w-full">
+                        <h1 class="font-bold text-xs md:text-lg lg:text-2xl">Floral Summer Shirt</h1>
+                        <p class="text-xs md:text-lg lg:text2xl">₹399</p>
+                    </div>
+                    <div>
+                        <img src="./nastro-img/n8.jpg" alt="" class="w-full">
+                        <h1 class="font-bold text-xs md:text-lg lg:text-2xl"> Old Summer Shirt</h1>
+                        <p class="text-xs md:text-lg lg:text2xl">₹399</p>
+                    </div>
+                    <div>
+                        <img src="./nastro-img/n7.jpg" alt="" class="w-full">
+                        <h1 class="font-bold text-xs md:text-lg lg:text-2xl">New plain Shirt</h1>
+                        <p class="text-xs md:text-lg lg:text2xl">₹399</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-3 overflow-x-auto gap-3 md:gap-3 p-4">
+                    <div>
+                        <img src="./nastro-img/n6.jpg" alt="" class="w-full">
+                        <h1 class="font-bold text-xs md:text-lg lg:text-2xl">Floral Summer Pant</h1>
+                        <p class="text-xs md:text-lg lg:text2xl">₹399</p>
+                    </div>
+                    <div>
+                        <img src="./nastro-img/n10.jpg" alt="" class="w-full">
+                        <h1 class="font-bold text-xs md:text-lg lg:text-2xl">Summer Green Shirt</h1>
+                        <p class="text-xs md:text-lg lg:text2xl">₹299</p>
+                    </div>
+                    <div>
+                        <img src="./nastro-img/n11.jpg" alt="" class="w-full">
+                        <h1 class="font-bold text-xs md:text-lg lg:text-2xl">Party Floral Shirt</h1>
+                        <p class="text-xs md:text-lg lg:text2xl">₹499</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-3 overflow-x-auto gap-3 md:gap-3 p-4">
+                    <div>
+                        <img src="./nastro-img/n12.jpg" alt="" class="w-full">
+                        <h1 class="font-bold text-xs md:text-lg lg:text-2xl">White Floral Summer Shirt</h1>
+                        <p class="text-xs md:text-lg lg:text2xl">₹499</p>
+                    </div>
+                    <div>
+                        <img src="./nastro-img/n13.jpg" alt="" class="w-full">
+                        <h1 class="font-bold text-xs md:text-lg lg:text-2xl">Shirt Party Red & Blue</h1>
+                        <p class="text-xs md:text-lg lg:text2xl">₹499</p>
+                    </div>
+                    <div>
+                        <img src="./nastro-img/n14.jpg" alt="" class="w-full">
+                        <h1 class="font-bold text-xs md:text-lg lg:text-2xl">Beach Shirt</h1>
+                        <p class="text-xs md:text-lg lg:text2xl">₹499</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!--News-->
+
+    <div class="news">
+        <h1>Join our news letter</h1>
+        <p>Signup for our email newsletter to get exclusive discounts, updates, and more</p>
+        <div class="news-searchbar">
+            <input type="text" class="search">
+        </div>
+
+        <div class="news-subscribe">
+            <button>Subscribe</button>
+        </div>
+    </div>
+
+    <!--Fooder-->
+ <section>
+    <div class="footer">
+        <h1>Nostra</h1>
+        <p>The Standard chunk of lorem ipsum used since the 1500s is reprodused below for those</p>
+        <p>interest</p>
+        <div class="footer-logo">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+            <i class="fa-brands fa-square-facebook"></i>
+        </div>
+        <p>@2025 Nostra.com</p>
+        </div>
+    </section>
+
+</body>
+</html>
